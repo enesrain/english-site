@@ -1,23 +1,50 @@
 body{
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    position: relative;
+ 
 }
 
 main{
-    position: relative;
+    position: absolute;
+    top: 50px;
     padding: 10px;
     width: 600px;
     height: 500px;
     background-color: palegreen;
     border: 2px solid black;
+    border-radius: 15px;
     visibility: hidden;
+    display: flex;
+    flex-direction: column;
 }
 main > div{
     text-align: start;
     position: absolute;
     visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.hidden{
+    visibility: hidden;
 }
 .show{
     visibility: visible;
+    display: block;
+}
+button{
+ position: absolute;
+ padding: 10px;
+
+}
+.btn-amount{
+    left: 600px;
+    top: 280px;
+}
+.btn-present-tense{
+    left: 720px;
+    top: 280px;
 }
